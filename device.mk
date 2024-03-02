@@ -74,6 +74,37 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps/odm/izat.conf:$(TARGET_COPY_OUT_ODM)/etc/izat.conf \
     $(LOCAL_PATH)/configs/gps/odm/sap.conf:$(TARGET_COPY_OUT_ODM)/etc/sap.conf \
 
+# Media
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/media/vendor/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
+    $(LOCAL_PATH)/configs/media/vendor/media_codecs_performance_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_v1.xml \
+    $(LOCAL_PATH)/configs/media/vendor/media_codecs_performance_v2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_v2.xml \
+    $(LOCAL_PATH)/configs/media/vendor/media_codecs_performance_v3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_v3.xml \
+    $(LOCAL_PATH)/configs/media/vendor/media_codecs_vendor_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor_audio.xml \
+    $(LOCAL_PATH)/configs/media/vendor/media_codecs_vendor_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor_v1.xml \
+    $(LOCAL_PATH)/configs/media/vendor/media_codecs_vendor_v2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor_v2.xml \
+    $(LOCAL_PATH)/configs/media/vendor/media_codecs_vendor_v3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor_v3.xml \
+    $(LOCAL_PATH)/configs/media/vendor/media_codecs_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor.xml \
+    $(LOCAL_PATH)/configs/media/vendor/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
+    $(LOCAL_PATH)/configs/media/vendor/media_profiles_khaje.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_khaje.xml \
+    $(LOCAL_PATH)/configs/media/vendor/media_profiles_scuba.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_scuba.xml \
+    $(LOCAL_PATH)/configs/media/vendor/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml \
+    $(LOCAL_PATH)/configs/media/vendor/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles.xml
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/media/odm/media_codecs_ffmpeg.xml:$(TARGET_COPY_OUT_ODM)/etc/media_codecs_ffmpeg.xml \
+    $(LOCAL_PATH)/configs/media/odm/media_codecs_odm.xml:$(TARGET_COPY_OUT_ODM)/etc/media_codecs_odm.xml \
+    $(LOCAL_PATH)/configs/media/odm/media_codecs_vendor_oplus.xml:$(TARGET_COPY_OUT_ODM)/etc/media_codecs_vendor_oplus.xml
+
+PRODUCT_COPY_FILES += \
+    frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_audio.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_c2_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_video.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
+
 # Kernel prebuilt
 PRODUCT_COPY_FILES += \
 	$(KERNEL_PATH)/Image.gz:kernel
