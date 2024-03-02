@@ -57,6 +57,21 @@ PRODUCT_PACKAGES_DEBUG += \
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# GPS
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/vendor/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
+    $(LOCAL_PATH)/configs/vendor/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
+    $(LOCAL_PATH)/configs/vendor/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
+    $(LOCAL_PATH)/configs/vendor/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
+    $(LOCAL_PATH)/configs/vendor/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
+    $(LOCAL_PATH)/configs/vendor/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
+    $(LOCAL_PATH)/configs/vendor/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/odm/gps.conf:$(TARGET_COPY_OUT_ODM)/etc/gps.conf \
+    $(LOCAL_PATH)/configs/odm/izat.conf:$(TARGET_COPY_OUT_ODM)/etc/izat.conf \
+    $(LOCAL_PATH)/configs/odm/sap.conf:$(TARGET_COPY_OUT_ODM)/etc/sap.conf \
+
 # Kernel prebuilt
 PRODUCT_COPY_FILES += \
 	$(KERNEL_PATH)/Image.gz:kernel
