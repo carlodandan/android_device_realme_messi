@@ -1,6 +1,8 @@
 # Copyright (C) 2023-2024 The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 
+KERNEL_PATH := device/$(PRODUCT_BRAND)/$(PRODUCT_DEVICE)-kernel
+
 # Get non-open-source specific aspects (proprietaries)
 $(call inherit-product, vendor/realme/messi/messi-vendor.mk)
 
@@ -21,6 +23,10 @@ PRODUCT_PACKAGES += \
 
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
+# Kernel prebuilt
+PRODUCT_COPY_FILES += \
+	$(KERNEL_PATH)/Image.gz:kernel
 
 # Screen density
 TARGET_SCREEN_HEIGHT := 2400
