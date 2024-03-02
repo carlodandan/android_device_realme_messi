@@ -74,6 +74,14 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps/odm/izat.conf:$(TARGET_COPY_OUT_ODM)/etc/izat.conf \
     $(LOCAL_PATH)/configs/gps/odm/sap.conf:$(TARGET_COPY_OUT_ODM)/etc/sap.conf \
 
+# IPC router config
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/common/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
+
+# IRQ
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/common/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
+
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/vendor/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
@@ -117,6 +125,16 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 $(call inherit-product, hardware/oplus/overlay/qssi/qssi.mk)
+
+# Public libraries
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/common/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
+
+# QCOM
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/common/privapp-permissions-oplus.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-qti.xml \
+    $(LOCAL_PATH)/configs/common/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
+    $(LOCAL_PATH)/configs/common/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml
 
 # Ramdisk
 PRODUCT_PACKAGES += \
