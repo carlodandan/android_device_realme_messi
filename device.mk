@@ -28,6 +28,10 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_COPY_FILES += \
 	$(KERNEL_PATH)/Image.gz:kernel
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    fstab.qcom
+
 # Screen density
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
