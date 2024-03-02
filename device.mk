@@ -28,6 +28,9 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_COPY_FILES += \
 	$(KERNEL_PATH)/Image.gz:kernel
 
+# Overlays
+$(call inherit-product, hardware/oplus/overlay/qssi/qssi.mk)
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom
