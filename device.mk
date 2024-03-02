@@ -126,6 +126,9 @@ PRODUCT_COPY_FILES += \
 # Overlays
 $(call inherit-product, hardware/oplus/overlay/qssi/qssi.mk)
 
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay
+
 # Public libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/common/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
