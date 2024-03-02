@@ -95,6 +95,9 @@ TARGET_RECOVERY_UI_MARGIN_HEIGHT := 103
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
+# Sepolicy - QCOM Common
+include device/qcom/sepolicy/sepolicy.mk
+
 # Treble
 BOARD_VNDK_VERSION := current
 
