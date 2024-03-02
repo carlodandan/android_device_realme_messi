@@ -9,6 +9,12 @@ $(call inherit-product, vendor/realme/messi/messi-vendor.mk)
 # Get virtual-ab-ota properties
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch.mk)
 
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
+# Include GSI keys
+$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
+
 # A/B
 AB_OTA_PARTITIONS += system system_ext vendor product odm boot recovery dtbo vbmeta vbmeta_system
 
