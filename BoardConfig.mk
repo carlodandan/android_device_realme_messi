@@ -116,8 +116,11 @@ TARGET_RECOVERY_UI_MARGIN_HEIGHT := 103
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
+# Sepolicy - OPlus Common
+include hardware/oplus/sepolicy/qti/SEPolicy.mk
+
 # Sepolicy - QCOM Common
-include device/qcom/sepolicy/sepolicy.mk
+include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
 
 # Touch
 SOONG_CONFIG_NAMESPACES += OPLUS_LINEAGE_TOUCH_HAL
