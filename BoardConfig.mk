@@ -116,6 +116,12 @@ TARGET_RECOVERY_UI_MARGIN_HEIGHT := 103
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
+# Rules
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+# GOOGLE: workaround for https://android-review.googlesource.com/c/platform/system/sepolicy/+/1532995
+BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
+
 # Sepolicy - OPlus Common
 include hardware/oplus/sepolicy/qti/SEPolicy.mk
 
