@@ -379,3 +379,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/odm/WCNSS_qcom_cfg_ftm.ini:$(TARGET_COPY_OUT_ODM)/etc/wifi/WCNSS_qcom_cfg_ftm.ini \
     $(LOCAL_PATH)/wifi/odm/WCNSS_qcom_cfg_ua.ini:$(TARGET_COPY_OUT_ODM)/etc/wifi/WCNSS_qcom_cfg_ua.ini \
     $(LOCAL_PATH)/wifi/odm/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_ODM)/etc/wifi/WCNSS_qcom_cfg.ini
+
+# WiFi Display
+PRODUCT_PACKAGES += \
+    libnl \
+    libwfdaac_vendor
+
+PRODUCT_BOOT_JARS += \
+    WfdCommon
