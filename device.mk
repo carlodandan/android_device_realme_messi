@@ -61,7 +61,6 @@ PRODUCT_PACKAGES += \
     libaudio-resampler \
     libaudiopreprocessing \
     libaudioroute \
-    libbatterylistener \
     libbundlewrapper \
     libqcompostprocbundle \
     libqcomvisualizer \
@@ -70,19 +69,11 @@ PRODUCT_PACKAGES += \
     libvolumelistener
 
 PRODUCT_PACKAGES += \
-    liba2dpoffload \
-    libcirrusspkrprot \
-    libcomprcapture \
     libdownmix \
     libdynproc \
     libeffectproxy \
-    libexthwplugin \
-    libhdmiedid \
-    libhfp \
     libldnhncr \
     libreverbwrapper \
-    libsndmonitor \
-    libspkrprot \
     libvisualizer
 
 PRODUCT_PACKAGES += \
