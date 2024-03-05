@@ -66,9 +66,16 @@ vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
 # Audio
 odm/lib/libaudioEngineerTest.so
-vendor/lib/hw/audio.primary.bengal.so
 vendor/lib/liba2dpoffload.so
 vendor/lib/libssrec.so
+vendor/lib/libbatterylistener.so
+vendor/lib/libcirrusspkrprot
+vendor/lib/libcomprcapture
+vendor/lib/libexthwplugin
+vendor/lib/libhdmiedid
+vendor/lib/libhfp
+vendor/lib/libsndmonitor
+vendor/lib/libspkrprot
 odm/lib/vendor.oplus.hardware.performance@1.0.so
 
 # Audio libraries
@@ -265,7 +272,6 @@ odm/lib64/libarcsoft_smart_denoise.so
 odm/lib64/libarcsoft_supernight.so
 odm/lib64/libarcsoft_super_night_raw.so
 vendor/lib64/libbitmlengine.so
-vendor/lib64/libcamera2ndk_vendor.so
 vendor/lib64/libcamera_nn_stub.so
 vendor/lib64/libcamerapostproc.so
 vendor/lib64/libcamxexternalformatutils.so
@@ -381,19 +387,10 @@ vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 # Display (HDR)
 vendor/lib64/libhdr_tm.so
 
-# Display (HWC)
-vendor/bin/hw/vendor.qti.hardware.display.composer-service
-vendor/lib64/libdisplayconfig.qti.so
-vendor/lib64/libhistogram.so
-vendor/lib64/libqdutils.so
-vendor/lib64/libsdmcore.so
-vendor/lib64/libsdmutils.so
-
 # Display (SDM)
 vendor/lib64/libdisplayqos.so
 vendor/lib64/libdisplayskuutils.so
 vendor/lib64/libqseed3.so
-vendor/lib64/libsdedrm.so
 vendor/lib64/libsdm-color.so
 vendor/lib64/libsdm-colormgr-algo.so
 vendor/lib64/libsdm-diag.so
