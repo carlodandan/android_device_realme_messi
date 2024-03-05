@@ -2,9 +2,9 @@
 # SPDX-License-Identifier: Apache-2.0
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_messi.mk
+    $(LOCAL_DIR)/lineage_RMX3521.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_messi-user \
-    lineage_messi-userdebug \
-    lineage_messi-eng
+    lineage_RMX3521-user \
+    lineage_RMX3521-userdebug \
+    lineage_RMX3521-eng

@@ -8,11 +8,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Inherit from messi device
-$(call inherit-product, device/realme/messi/device.mk)
+# Inherit from RMX3521 device
+$(call inherit-product, device/realme/RMX3521/device.mk)
 
-PRODUCT_DEVICE := messi
-PRODUCT_NAME := lineage_messi
+PRODUCT_DEVICE := RMX3521
+PRODUCT_NAME := lineage_RMX3521
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := Realme 9 4G
 PRODUCT_MANUFACTURER := realme
