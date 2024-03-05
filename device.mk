@@ -1,7 +1,7 @@
 # Copyright (C) 2023-2024 The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 
-KERNEL_PATH := device/$(PRODUCT_BRAND)/$(PRODUCT_DEVICE)-kernel
+KERNEL_PATH := device/realme/messi-kernel
 
 # Get non-open-source specific aspects (proprietaries)
 $(call inherit-product, vendor/realme/messi/messi-vendor.mk)
