@@ -94,10 +94,10 @@ typedef int error_log_t;
 #include <audio_utils/Statistics.h>
 #include <audio_utils/clock.h>
 #endif
-#include "audio_defs.h"
+#include "audio_extn/audio_defs.h"
 #include "voice.h"
 #include "audio_hw_extn_api.h"
-#include "device_utils.h"
+#include "audio_extn/device_utils.h"
 
 #if LINUX_ENABLED
 typedef struct {
