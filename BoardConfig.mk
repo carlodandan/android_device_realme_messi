@@ -78,7 +78,6 @@ DEVICE_SPECIFIC_MEDIA_PATH := $(DEVICE_PATH)/hals/media
 
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/hidl/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/hidl/compatibility_matrix.xml
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/hidl/device_framework_matrix.xml
 
 # Kernel
 BOARD_KERNEL_IMAGE_NAME := Image.gz
