@@ -63,7 +63,7 @@ TARGET_USES_ION := true
 
 # DTBs
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)-kernel/prebuilt/dtbo.img
-TARGET_PREBUILT_DTB := $(DEVICE_PATH)-kernel/prebuilt/dtb
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)-kernel/prebuilt/dtb.img
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
 
