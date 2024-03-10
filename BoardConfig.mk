@@ -102,7 +102,7 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_NO_KERNEL_OVERRIDE := true
 
 # Kernel Headers: Workaround to make lineage's soong generator work
-TARGET_KERNEL_SOURCE := $(DEVICE_PATH)-kernel/kernel-headers
+TARGET_KERNEL_SOURCE := $(DEVICE_PATH)-prebuilt/kernel-headers
 
 # Partitions - metadata
 BOARD_USES_METADATA_PARTITION := true
