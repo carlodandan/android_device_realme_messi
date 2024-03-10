@@ -160,6 +160,10 @@ include hardware/oplus/sepolicy/qti/SEPolicy.mk
 # Sepolicy - QCOM Common
 include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
 
+# Sepolicy - In-tree
+BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+
+
 # Touch
 SOONG_CONFIG_NAMESPACES += OPLUS_LINEAGE_TOUCH_HAL
 SOONG_CONFIG_OPLUS_LINEAGE_TOUCH_HAL := INCLUDE_DIR
