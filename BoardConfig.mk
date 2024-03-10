@@ -164,7 +164,7 @@ include hardware/oplus/sepolicy/qti/SEPolicy.mk
 include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
 
 # Sepolicy - In-tree
-BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 
 # Touch
