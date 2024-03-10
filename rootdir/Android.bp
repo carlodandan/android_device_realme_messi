@@ -1,5 +1,5 @@
 //
-// Copyright (C) 2023-2024 The LineageOS Project
+// Copyright (C) 2023 The LineageOS Project
 //
 // SPDX-License-Identifier: Apache-2.0
 //
@@ -11,9 +11,10 @@ sh_binary {
     vendor: true,
 }
 
+
 sh_binary {
-    name: "init.qcom.class_core.sh",
-    src: "bin/init.qcom.class_core.sh",
+    name: "init.qcom.sh",
+    src: "bin/init.qcom.sh",
     vendor: true,
 }
 
@@ -23,11 +24,13 @@ sh_binary {
     vendor: true,
 }
 
+
 sh_binary {
-    name: "init.qcom.efs.sync.sh",
-    src: "bin/init.qcom.efs.sync.sh",
+    name: "init.qcom.usb.sh",
+    src: "bin/init.qcom.usb.sh",
     vendor: true,
 }
+
 
 sh_binary {
     name: "init.qcom.post_boot.sh",
@@ -36,45 +39,15 @@ sh_binary {
 }
 
 sh_binary {
-    name: "init.qcom.sensors.sh",
-    src: "bin/init.qcom.sensors.sh",
+    name: "init.qcom.class_core.sh",
+    src: "bin/init.qcom.class_core.sh",
     vendor: true,
 }
 
-sh_binary {
-    name: "init.qcom.sh",
-    src: "bin/init.qcom.sh",
-    vendor: true,
-}
 
-sh_binary {
-    name: "init.qti.chg_policy.sh",
-    src: "bin/init.qti.chg_policy.sh",
-    vendor: true,
-}
-sh_binary {
-    name: "init.qti.dcvs.sh",
-    src: "bin/init.qti.dcvs.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "qca6234-service.sh",
-    src: "bin/qca6234-service.sh",
-    vendor: true,
-}
-
-// fstab
 prebuilt_etc {
-    name: "fstab.qcom",
-    src: "etc/fstab.qcom",
-    vendor: true,
-}
-
-// Init configuration files
-prebuilt_etc {
-    name: "init.oem_ftm.rc",
-    src: "etc/init.oem_ftm.rc",
+    name: "init.qcom.usb.rc",
+    src: "etc/init.qcom.usb.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
@@ -93,16 +66,10 @@ prebuilt_etc {
     vendor: true,
 }
 
+// fstab
 prebuilt_etc {
-    name: "vendor.oem_ftm_svc_disable.rc",
-    src: "etc/vendor.oem_ftm_svc_disable.rc",
-    sub_dir: "init/hw",
+    name: "fstab.qcom",
+    src: "etc/fstab.qcom",
     vendor: true,
-}
-
-prebuilt_etc {
-    name: "vendor.oem_ftm.rc",
-    src: "etc/vendor.oem_ftm.rc",
-    sub_dir: "init/hw",
-    vendor: true,
+    recovery: true;
 }

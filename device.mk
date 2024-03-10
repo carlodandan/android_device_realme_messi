@@ -282,26 +282,22 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     fstab.qcom_ramdisk
 
+# Rootdir
 PRODUCT_PACKAGES += \
     init.class_main.sh \
-    init.qcom.class_core.sh \
-    init.qcom.early_boot.sh \
-    init.qcom.efs.sync.sh \
-    init.qcom.post_boot.sh \
-    init.qcom.sensors.sh \
     init.qcom.sh \
-    init.qti.chg_policy.sh \
-    init.qti.dcvs.sh \
-    qca6234-service.sh
+    init.qcom.early_boot.sh \
+    init.qcom.usb.sh \
+    init.qcom.post_boot.sh \
+    init.qcom.class_core.sh
 
 PRODUCT_PACKAGES += \
-    init.oem_ftm.rc \
+    init.qcom.usb.rc \
     init.qcom.rc \
-    init.recovery.qcom.rc \
     init.target.rc \
     ueventd.qcom.rc \
-    vendor.oem_ftm.rc \
-    vendor.oem_ftm_svc_disable.rc
+    init.aging.rc \
+    init.recovery.qcom.rc
 
 # Screen density
 TARGET_SCREEN_HEIGHT := 2400
