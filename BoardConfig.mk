@@ -162,6 +162,7 @@ include hardware/oplus/sepolicy/qti/SEPolicy.mk
 include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
 
 # Sepolicy - In-tree
+SEPOLICY_PATH := device/qcom/sepolicy_vndr-legacy-um
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 
