@@ -156,14 +156,13 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 
 # Sepolicy - In-tree
-SEPOLICY_PATH := device/qcom/sepolicy_vndr-legacy-um
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
+# Sepolicy - QCOM Common
+include device/qcom/sepolicy_vndr/SEPolicy.mk
 
 # Sepolicy - OPlus Common
 include hardware/oplus/sepolicy/qti/SEPolicy.mk
-
-# Sepolicy - QCOM Common
-include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
 
 # Touch
 SOONG_CONFIG_NAMESPACES += OPLUS_LINEAGE_TOUCH_HAL
