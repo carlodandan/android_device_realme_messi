@@ -155,16 +155,15 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 # GOOGLE: workaround for https://android-review.googlesource.com/c/platform/system/sepolicy/+/1532995
 BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 
+# Sepolicy - In-tree
+SEPOLICY_PATH := device/qcom/sepolicy_vndr-legacy-um
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
 # Sepolicy - OPlus Common
 include hardware/oplus/sepolicy/qti/SEPolicy.mk
 
 # Sepolicy - QCOM Common
 include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
-
-# Sepolicy - In-tree
-SEPOLICY_PATH := device/qcom/sepolicy_vndr-legacy-um
-BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-
 
 # Touch
 SOONG_CONFIG_NAMESPACES += OPLUS_LINEAGE_TOUCH_HAL
