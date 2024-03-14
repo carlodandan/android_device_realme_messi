@@ -103,7 +103,7 @@ TARGET_KERNEL_SOURCE := $(DEVICE_PATH)-prebuilt/kernel-headers
 
 # Modules
 BOARD_VENDOR_KERNEL_MODULES := $(wildcard $(DEVICE_PATH)-prebuilt/prebuilt/modules/*.ko)
-BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules/vendor/modules.load))
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)-prebuilt/modules.load))
 
 # Partitions - metadata
 BOARD_USES_METADATA_PARTITION := true
