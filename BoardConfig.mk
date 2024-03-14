@@ -101,6 +101,10 @@ TARGET_NO_KERNEL_OVERRIDE := true
 # Kernel Headers: Workaround to make lineage's soong generator work
 TARGET_KERNEL_SOURCE := $(DEVICE_PATH)-prebuilt/kernel-headers
 
+# Modules
+BOARD_VENDOR_KERNEL_MODULES := $(wildcard $(DEVICE_PATH)-prebuilt/prebuilt/modules/*.ko)
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules/vendor/modules.load))
+
 # Partitions - metadata
 BOARD_USES_METADATA_PARTITION := true
 
