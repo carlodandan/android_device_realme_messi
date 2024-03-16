@@ -210,7 +210,7 @@ PRODUCT_COPY_FILES += \
 
 # Kernel prebuilt
 PRODUCT_COPY_FILES += \
-	$(KERNEL_PATH)/prebuilt/Image.gz:kernel
+	$(KERNEL_PATH)/oss/Image.gz:kernel
 
 # Keylayout
 PRODUCT_COPY_FILES += \
