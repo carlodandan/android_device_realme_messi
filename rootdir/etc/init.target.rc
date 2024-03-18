@@ -71,20 +71,8 @@ on post-fs-data
 
 on early-boot
     start vendor.sensors
-#ifdef OPLUS_FEATURE_SECURITY_COMMON
-#YongLin.Liu@BSP.Security.Basic 2021/10/26, add for CtsNativeVerifiedBootTestCases avbHashtreeNotUsingSha1
-    verity_update_state
-#endif /* OPLUS_FEATURE_SECURITY_COMMON */
 
 on boot
-    #ifdef VENDOR_EDIT
-    #Tianjing.Zhu@RM.AD.Performance , 2021/3/24, Add for boost boot time
-    write /dev/cpuset/top-app/cpus 0-7
-    write /dev/cpuset/foreground/cpus 0-7
-    write /dev/cpuset/foreground/boost/cpus 0-7
-    write /dev/cpuset/system-background/cpus 0-7
-    write /dev/cpuset/background/cpus 0-3
-    #endif
 #USB controller configuration
     setprop vendor.usb.rndis.func.name "gsi"
     setprop vendor.usb.rmnet.func.name "gsi"
@@ -137,16 +125,6 @@ on property:init.svc.vendor.per_mgr=running
 
 on property:sys.shutdown.requested=*
     stop vendor.per_proxy
-
-#//ZhangPan@CONNECTIVITY.WIFI.BASIC.LOG.1072015,2016/08/03, Remove for wifi log enhance function
-#on property:vold.decrypt=trigger_restart_framework
-#   start vendor.cnss_diag
-#service vendor.cnss_diag /system/vendor/bin/cnss_diag -q -f -t HELIUM
-#   class main
-#   user system
-#   group system wifi inet sdcard_rw media_rw diag
-#   oneshot
-#endif /* OPLUS_BUG_COMPATIBILITY */
 
 on property:ro.vendor.qti.soc_id=444
     setprop ro.soc.model SM6115

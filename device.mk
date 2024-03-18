@@ -329,7 +329,6 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.target.rc \
     ueventd.qcom.rc \
-    init.aging.rc \
     init.recovery.qcom.rc
 
 # Screen density
