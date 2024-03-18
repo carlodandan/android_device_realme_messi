@@ -1,0 +1,26 @@
+[
+  {
+    "remote": "github.com",
+    "repository": "carlodandan/android_device_realme_RMX3521-prebuilts",
+    "target_path": "device/realme/RMX3521-prebuilt",
+    "revision": "lineage-20"
+  },
+  {
+    "remote": "github.com",
+    "repository": "carlodandan/android_vendor_realme_RMX3521",
+    "target_path": "vendor/realme/RMX3521",
+    "revision": "lineage-20"
+  },
+  {
+    "remote": "github.com",
+    "repository": "LineageOs/android_hardware_oplus",
+    "target_path": "hardware/oplus",
+    "revision": "lineage-20"
+  },
+  {
+    "remote": "github.com",
+    "repository": "carlodandan/android_kernel_realme_sm6225",
+    "target_path": "kernel/realme/sm6225",
+    "revision": "lineage-20"
+  }
+]
