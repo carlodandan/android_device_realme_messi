@@ -35,7 +35,8 @@ AB_OTA_POSTINSTALL_CONFIG += \
     POSTINSTALL_OPTIONAL_vendor=true
 
 PRODUCT_PACKAGES += \
-    otapreopt_script
+    otapreopt_script \
+    checkpoint_gc
 
 # AID/fs configs
 PRODUCT_PACKAGES += \
