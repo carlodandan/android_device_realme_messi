@@ -117,7 +117,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.1-impl-qti \
     android.hardware.boot@1.1-impl-qti.recovery \
-    android.hardware.boot@1.1-service
+    android.hardware.boot@1.1-service \
+    bootctrl.bengal \
+    bootctrl.bengal.recovery
+
+PRODUCT_PACKAGES_DEBUG += \
+    bootctl
 
 # Display
 PRODUCT_PACKAGES += \
