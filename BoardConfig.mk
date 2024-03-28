@@ -95,7 +95,6 @@ BOARD_KERNEL_CMDLINE += \
         swiotlb=2048 \
         loop.max_part=7 \
         kpti=off \
-        androidboot.selinux=permissive \
         androidboot.init_fatal_reboot_target=recovery
 
 # Kernel ARGS
@@ -178,7 +177,6 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 
 # Sepolicy - In-tree
-SELINUX_IGNORE_NEVERALLOWS := true
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Sepolicy - QCOM Common
