@@ -344,6 +344,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-service.multihal
 
+# Servicetracker
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.servicetracker@1.1.vendor \
+    vendor.qti.hardware.servicetracker@1.2.vendor
+
 # Shipping API
 BOARD_API_LEVEL := 30
 BOARD_SHIPPING_API_LEVEL := $(BOARD_API_LEVEL)
