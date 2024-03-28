@@ -114,7 +114,11 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_NO_KERNEL_OVERRIDE := true
 
 # Kernel Headers: Workaround to make lineage's soong generator work
-TARGET_KERNEL_SOURCE := $(DEVICE_PATH)-prebuilt/kernel-headers
+TARGET_KERNEL_SOURCE := kernel/realme/sm6225
+TARGET_KERNEL_CONFIG := vendor/bengal-perf_defconfig
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_CLANG_VERSION := r416183b
+TARGET_KERNEL_ADDITIONAL_FLAGS := LLVM_IAS=0
 
 # Modules
 BOARD_VENDOR_KERNEL_MODULES := $(wildcard $(DEVICE_PATH)-prebuilt/prebuilt/modules/*.ko)

@@ -1,8 +1,6 @@
 # Copyright (C) 2023-2024 The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 
-KERNEL_PATH := device/realme/RMX3521-prebuilt
-
 # Get non-open-source specific aspects (proprietaries)
 $(call inherit-product, vendor/realme/RMX3521/RMX3521-vendor.mk)
 
@@ -226,10 +224,6 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
-
-# Kernel prebuilt
-PRODUCT_COPY_FILES += \
-	$(KERNEL_PATH)/oss/Image.gz:kernel
 
 # Keylayout
 PRODUCT_COPY_FILES += \
