@@ -112,10 +112,6 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := r416183b
 TARGET_KERNEL_ADDITIONAL_FLAGS := LLVM_IAS=0
 
-# Modules
-BOARD_VENDOR_KERNEL_MODULES := $(wildcard $(DEVICE_PATH)-prebuilt/prebuilt/modules/*.ko)
-BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)-prebuilt/prebuilt/modules.load))
-
 # Partitions - metadata
 BOARD_USES_METADATA_PARTITION := true
 
@@ -146,7 +142,6 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 # Platform
 TARGET_BOARD_PLATFORM := bengal
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno610
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
