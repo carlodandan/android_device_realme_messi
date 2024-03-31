@@ -40,9 +40,9 @@ system_ext                                              /system_ext             
 vendor                                                  /vendor                   erofs    ro                                 wait,slotselect,logical,first_stage_mount
 product                                                 /product                  ext4    ro,barrier=1,discard                                 wait,slotselect,logical,first_stage_mount
 odm                                                     /odm                      erofs    ro                                 wait,slotselect,logical,first_stage_mount
-#/dev/block/bootdevice/by-name/system                    /                      ext4    ro,barrier=1                                         wait,slotselect,avb
-/dev/block/by-name/metadata                             /metadata                ext4    noatime,nosuid,nodev,discard                         wait,check,formattable,wrappedkey,first_stage_mount
+
 # Add fs_mgr flag - sysfs_path=/sys/devices/platform/soc/xxxx.[ufshc|sdhci] to userdata entry, based on UFS|eMMC device.
+/dev/block/by-name/metadata                             /metadata                ext4    noatime,nosuid,nodev,discard                         wait,check,formattable,wrappedkey,first_stage_mount
 /dev/block/bootdevice/by-name/userdata                  /data                    f2fs    noatime,nosuid,nodev,discard,reserve_root=32768,resgid=1065,fsync_mode=nobarrier,inlinecrypt     latemount,wait,resize,check,formattable,quota,reservedsize=128M,fileencryption=ice,wrappedkey,checkpoint=fs
 /dev/block/bootdevice/by-name/persist                   /mnt/vendor/persist    ext4    noatime,nosuid,nodev,barrier=1                       wait
 /dev/block/bootdevice/by-name/misc                      /misc                  emmc    defaults                                             defaults
