@@ -320,8 +320,8 @@ PRODUCT_PACKAGES += \
 
 # Rootdir
 PRODUCT_PACKAGES += \
-    fstab.defaul \
-    fstab.defaul_ramdisk
+    fstab.default \
+    fstab.default_ramdisk
 
 # Rootdir
 PRODUCT_PACKAGES += \
