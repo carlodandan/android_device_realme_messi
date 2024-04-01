@@ -139,6 +139,17 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@4.0.vendor \
     vendor.qti.hardware.display.mapperextensions@1.1.vendor
 
+PRODUCT_PACKAGES += \
+    libqdMetaData.system \
+    libdisplayconfig.qti \
+    libdisplayconfig.system.qti \
+    libqdMetaData \
+    libqdMetaData.system \
+    libsdmcore \
+    libsdmutils \
+    libtinyxml \
+    libvulkan \
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor
