@@ -71,9 +71,9 @@ TARGET_USES_QTI_MAPPER_2_0 := true
 TARGET_USES_QTI_MAPPER_EXTENSIONS_1_1 := true
 
 # DTBs
-BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)-prebuilt/prebuilt/dtbo.img
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)-prebuilt/prebuilt/dtb.img
 BOARD_INCLUDE_RECOVERY_DTBO := true
-BOARD_KERNEL_SEPARATED_DTBO := true
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
@@ -106,6 +106,7 @@ BOARD_KERNEL_CMDLINE += \
         androidboot.init_fatal_reboot_target=recovery
 
 # Kernel ARGS
+BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
 # Kernel
