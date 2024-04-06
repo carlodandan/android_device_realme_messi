@@ -52,7 +52,7 @@ prebuilt_etc {
 
 // fstab
 prebuilt_etc {
-    name: "fstab.default",
-    src: "etc/fstab.default",
+    name: "fstab.qcom",
+    src: "etc/fstab.qcom",
     vendor: true,
 }

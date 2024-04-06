@@ -326,8 +326,8 @@ PRODUCT_PACKAGES += \
 
 # Rootdir
 PRODUCT_PACKAGES += \
-    fstab.default \
-    fstab.default_ramdisk
+    fstab.qcom \
+    fstab.qcom_ramdisk
 
 # Rootdir
 PRODUCT_PACKAGES += \

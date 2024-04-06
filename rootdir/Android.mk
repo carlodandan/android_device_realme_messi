@@ -25,10 +25,10 @@ include $(BUILD_PREBUILT)
 
 # Ramdisk FStab
 include $(CLEAR_VARS)
-LOCAL_MODULE	   := fstab.default_ramdisk
-LOCAL_MODULE_STEM  := fstab.default
+LOCAL_MODULE	   := fstab.qcom_ramdisk
+LOCAL_MODULE_STEM  := fstab.qcom
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
-LOCAL_SRC_FILES    := etc/fstab.default
+LOCAL_SRC_FILES    := etc/fstab.qcom
 LOCAL_MODULE_PATH  := $(TARGET_RAMDISK_OUT)
 include $(BUILD_PREBUILT)
