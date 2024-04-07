@@ -5,7 +5,7 @@
 $(call inherit-product, vendor/realme/RMX3521/RMX3521-vendor.mk)
 
 # Get virtual-ab-ota properties
-$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
