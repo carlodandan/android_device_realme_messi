@@ -18,6 +18,12 @@
     "revision": "lineage-20"
   },
   {
+    "remote": "gitlab.com",
+    "repository": "firmware-dump/android_firmware_realme_RMX3521",
+    "target_path": "firmware/realme",
+    "revision": "lineage-20"
+  },
+  {
     "remote": "github.com",
     "repository": "carlodandan/android_kernel_realme_sm6225",
     "target_path": "kernel/realme/sm6225",
