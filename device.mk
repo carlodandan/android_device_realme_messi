@@ -248,7 +248,9 @@ PRODUCT_PACKAGES += \
 # NoSDcard
 PRODUCT_CHARACTERISTICS := nosdcard
 
+
 # Overlays
+$(call inherit-product, hardware/oplus/overlay/generic/generic.mk)
 $(call inherit-product, hardware/oplus/overlay/qssi/qssi.mk)
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
@@ -258,7 +260,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
-    FrameworksResTarget
+    FrameworksResTarget \
+    OplusTelephonyResCommon \
+    OplusSystemUIResCommon \
+    WifiResTarget
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -413,7 +418,6 @@ PRODUCT_COPY_FILES += \
 
 # Wifi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service \
     vendor.qti.hardware.wifi.hostapd@1.1.vendor \
     vendor.qti.hardware.wifi.supplicant@2.1.vendor
 
