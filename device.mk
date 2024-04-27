@@ -248,6 +248,11 @@ PRODUCT_PACKAGES += \
 # NoSDcard
 PRODUCT_CHARACTERISTICS := nosdcard
 
+
+# Overlays
+$(call inherit-product, hardware/oplus/overlay/generic/generic.mk)
+$(call inherit-product, hardware/oplus/overlay/qssi/qssi.mk)
+
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 DEVICE_PACKAGE_OVERLAYS += \
@@ -257,9 +262,7 @@ PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
     FrameworksResTarget \
     OplusTelephonyResCommon \
-    SystemUIResCommon \
-    TelephonyResCommon \
-    WifiResCommon \
+    OplusSystemUIResCommon \
     WifiResTarget
 
 # Permissions
