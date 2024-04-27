@@ -415,6 +415,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vndservicemanager
 
+# VNDK
+PRODUCT_USE_PRODUCT_VNDK_OVERRIDE := true
+
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
