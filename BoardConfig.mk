@@ -182,7 +182,7 @@ BOARD_SYSTEMSDK_VERSIONS := $(SHIPPING_API_LEVEL)
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Sepolicy - QCOM Common
-include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
+include device/qcom/sepolicy_vndr/SEPolicy.mk
 
 # Sepolicy - OPlus Common
 include hardware/oplus/sepolicy/qti/SEPolicy.mk
