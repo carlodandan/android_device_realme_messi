@@ -269,7 +269,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
     FrameworksResTarget \
-    OplusTelephonyResCommon \
     OplusSystemUIResCommon \
     WifiResTarget
 
