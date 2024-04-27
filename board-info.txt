@@ -1,1 +1,0 @@
-require board=RMX3521|RE54E2L1
