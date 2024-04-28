@@ -9,19 +9,13 @@
     "remote": "github.com",
     "repository": "carlodandan/android_vendor_realme_RMX3521",
     "target_path": "vendor/realme/RMX3521",
-    "revision": "lineage-20"
+    "revision": "lineage-21"
   },
   {
     "remote": "github.com",
     "repository": "LineageOs/android_hardware_oplus",
     "target_path": "hardware/oplus",
-    "revision": "lineage-20"
-  },
-  {
-    "remote": "gitlab.com",
-    "repository": "firmware-dump/android_firmware_realme_RMX3521",
-    "target_path": "firmware/realme",
-    "revision": "lineage-20"
+    "revision": "lineage-21"
   },
   {
     "remote": "github.com",
